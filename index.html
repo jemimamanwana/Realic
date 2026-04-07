@@ -4,52 +4,167 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Realic Professional & Technical College | Gaborone, Botswana</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="logo">
-    <h1>Realic Professional & Technical College</h1>
-    <p>Accredited by Botswana Qualifications Authority (BQA)</p>
+<!-- Header -->
+<header id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo.jpg" alt="REPTEC Logo" class="logo-img">
+      <div class="logo-text">
+        <span class="logo-name">REPTEC</span>
+        <span class="logo-sub">Realic Professional &amp; Technical College</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav>
-    <ul>
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="admissions.html">Admissions</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 </header>
 
+<!-- Hero -->
 <section class="hero">
-  <h2>Flexible Learning for a Changing World</h2>
-  <p>Develop your skills and shape your career with accredited programs in Business, Health & Safety, and Administration — designed for Botswana’s workforce.</p>
-  <a href="admissions.html" class="btn">Apply Now</a>
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-tag">Accredited by Botswana Qualifications Authority (BQA)</p>
+    <h1>Flexible Learning<br>for a <span class="highlight">Changing World</span></h1>
+    <p class="hero-desc">Develop your skills and shape your career with accredited programs in Business, Health &amp; Safety, and Administration — designed for Botswana's workforce.</p>
+    <div class="hero-actions">
+      <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+      <a href="programs.html" class="btn btn-outline">View Programs</a>
+    </div>
+  </div>
+  <div class="hero-decoration"></div>
 </section>
 
+<!-- Stats Bar -->
+<section class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat" style="--delay: 0">
+      <span class="stat-number">BQA</span>
+      <span class="stat-label">Accredited</span>
+    </div>
+    <div class="stat" style="--delay: 1">
+      <span class="stat-number">4+</span>
+      <span class="stat-label">Study Modes</span>
+    </div>
+    <div class="stat" style="--delay: 2">
+      <span class="stat-number">100%</span>
+      <span class="stat-label">Digital Access</span>
+    </div>
+    <div class="stat" style="--delay: 3">
+      <span class="stat-number">Gaborone</span>
+      <span class="stat-label">African Mall</span>
+    </div>
+  </div>
+</section>
+
+<!-- Highlights -->
 <section class="highlights">
-  <div>
-    <h3>Accredited Qualifications</h3>
-    <p>Recognized by the Botswana Qualifications Authority (BQA) for quality and integrity in education.</p>
+  <div class="section-header">
+    <p class="section-tag">Why Choose Us</p>
+    <h2>Built for <span class="highlight">Your Future</span></h2>
   </div>
-  <div>
-    <h3>Flexible Study Options</h3>
-    <p>Full-time, part-time, weekend, and distance learning programs to suit your schedule.</p>
-  </div>
-  <div>
-    <h3>Digital Learning</h3>
-    <p>Access resources, classes, and support online through the Realic digital platform.</p>
+  <div class="highlights-grid">
+    <div class="card" style="--delay: 0">
+      <div class="card-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+      </div>
+      <h3>Accredited Qualifications</h3>
+      <p>Recognized by the Botswana Qualifications Authority (BQA) for quality and integrity in education.</p>
+    </div>
+    <div class="card" style="--delay: 1">
+      <div class="card-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <h3>Flexible Study Options</h3>
+      <p>Full-time, part-time, weekend, and distance learning programs to suit your schedule.</p>
+    </div>
+    <div class="card" style="--delay: 2">
+      <div class="card-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <h3>Digital Learning</h3>
+      <p>Access resources, classes, and support online through the Realic digital platform.</p>
+    </div>
   </div>
 </section>
 
+<!-- CTA Section -->
+<section class="cta">
+  <div class="cta-inner">
+    <h2>Ready to Start Your Journey?</h2>
+    <p>Join hundreds of students building their careers with accredited, flexible education at REPTEC.</p>
+    <a href="admissions.html" class="btn btn-primary btn-lg">Get Started Today</a>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer>
-  <p>&copy; 2026 Realic Professional & Technical College. African Mall, Gaborone, Botswana</p>
-  <p>Contact: +267 390 3890 | <a href="mailto:info@reptec.org">info@reptec.org</a></p>
-  <p><a href="[facebook.com](https://www.facebook.com/REALICCOLLEGE/)" target="_blank">Follow us on Facebook</a></p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo.jpg" alt="REPTEC Logo" class="footer-logo">
+      <p>Realic Professional &amp; Technical College</p>
+      <p class="footer-addr">African Mall, Gaborone, Botswana</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Get in Touch</h4>
+      <p>+267 390 3890</p>
+      <p><a href="mailto:info@reptec.org">info@reptec.org</a></p>
+      <a href="https://www.facebook.com/REALICCOLLEGE/" target="_blank" class="social-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Realic Professional & Technical College. All rights reserved.</p>
+  </div>
 </footer>
+
+<script>
+// Subtle header shrink on scroll
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// Intersection Observer for fade-in animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.card, .stat, .section-header, .cta-inner, .reveal').forEach(el => {
+  observer.observe(el);
+});
+</script>
 
 </body>
 </html>

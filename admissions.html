@@ -3,44 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admissions | Realic College</title>
+  <title>Admissions | Realic Professional & Technical College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="admissions.html" class="active">Admissions</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Header -->
+<header id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo.jpg" alt="REPTEC Logo" class="logo-img">
+      <div class="logo-text">
+        <span class="logo-name">REPTEC</span>
+        <span class="logo-sub">Realic Professional &amp; Technical College</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="admissions.html" class="active">Admissions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <h2>Admissions</h2>
-  <p>Join Realic’s growing community of learners today! Flexible intake schedules and multiple learning modes make it easy to fit education into your life.</p>
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <p class="hero-tag">Start Your Journey</p>
+    <h1>Join <span class="highlight">Realic College</span></h1>
+    <p class="page-hero-desc">Flexible intake schedules and multiple learning modes make it easy to fit education into your life.</p>
+  </div>
+  <div class="hero-decoration"></div>
+</section>
 
-  <h3>How to Apply</h3>
-  <ul>
-    <li>Download the application form from <a href="[reptec.org](https://reptec.org)">reptec.org</a>.</li>
-    <li>Submit completed forms with academic certificates and ID.</li>
-    <li>Choose your preferred study mode: full-time, part-time, weekend, or distance learning.</li>
-  </ul>
+<!-- How to Apply -->
+<section class="apply-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">Application Process</p>
+      <h2>How to <span class="highlight">Apply</span></h2>
+      <p class="section-desc">Three simple steps to begin your education at REPTEC.</p>
+    </div>
+    <div class="steps-timeline">
+      <div class="step reveal" style="--delay: 0">
+        <div class="step-connector"></div>
+        <div class="step-marker">
+          <span>1</span>
+        </div>
+        <div class="step-content">
+          <h3>Download &amp; Fill</h3>
+          <p>Download the application form from <a href="https://reptec.org" class="inline-link">reptec.org</a> and complete all required sections carefully.</p>
+        </div>
+      </div>
+      <div class="step reveal" style="--delay: 1">
+        <div class="step-connector"></div>
+        <div class="step-marker">
+          <span>2</span>
+        </div>
+        <div class="step-content">
+          <h3>Submit Documents</h3>
+          <p>Submit your completed form along with certified copies of your academic certificates and national ID document.</p>
+        </div>
+      </div>
+      <div class="step reveal" style="--delay: 2">
+        <div class="step-connector"></div>
+        <div class="step-marker">
+          <span>3</span>
+        </div>
+        <div class="step-content">
+          <h3>Choose Your Mode</h3>
+          <p>Select your preferred study mode — full-time, part-time, weekend, or distance learning — and start your journey.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <h3>Entry Requirements</h3>
-  <p>Requirements vary by program but generally include a Junior Certificate (JC) or Botswana General Certificate of Secondary Education (BGCSE) pass.</p>
+<!-- Requirements & Support -->
+<section class="req-section">
+  <div class="container">
+    <div class="req-grid">
+      <div class="req-card reveal" style="--delay: 0">
+        <div class="req-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+        </div>
+        <h3>Entry Requirements</h3>
+        <p>Requirements vary by program but generally include:</p>
+        <ul class="req-list">
+          <li>Junior Certificate (JC)</li>
+          <li>BGCSE pass or equivalent</li>
+          <li>National ID / Passport</li>
+          <li>Certified academic transcripts</li>
+        </ul>
+      </div>
+      <div class="req-card reveal" style="--delay: 1">
+        <div class="req-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Support &amp; Guidance</h3>
+        <p>Our admissions team is here to help you every step of the way:</p>
+        <ul class="req-list">
+          <li>One-on-one admissions advice</li>
+          <li>Program selection guidance</li>
+          <li>Document preparation help</li>
+          <li>Financial planning support</li>
+        </ul>
+      </div>
+      <div class="req-card req-card--highlight reveal" style="--delay: 2">
+        <div class="req-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <h3>Contact Admissions</h3>
+        <p>Ready to apply or have questions? Reach out to our admissions office directly.</p>
+        <div class="req-contact-info">
+          <p><strong>Phone:</strong> +267 390 3890</p>
+          <p><strong>Email:</strong> <a href="mailto:info@reptec.org" class="inline-link">info@reptec.org</a></p>
+          <p><strong>Walk-in:</strong> African Mall, Gaborone</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <h3>Support & Assistance</h3>
-  <p>Admissions staff are available to guide you through the process. Contact us for help or advice.</p>
-</main>
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-inner reveal">
+    <h2>Your Future Starts Here</h2>
+    <p>Don't wait — download the application form and begin your journey with REPTEC today.</p>
+    <div class="hero-actions">
+      <a href="https://reptec.org" target="_blank" class="btn btn-primary btn-lg">Download Application</a>
+      <a href="contact.html" class="btn btn-outline">Ask a Question</a>
+    </div>
+  </div>
+</section>
 
+<!-- Footer -->
 <footer>
-  <p>&copy; 2026 Realic Professional & Technical College.</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo.jpg" alt="REPTEC Logo" class="footer-logo">
+      <p>Realic Professional &amp; Technical College</p>
+      <p class="footer-addr">African Mall, Gaborone, Botswana</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Get in Touch</h4>
+      <p>+267 390 3890</p>
+      <p><a href="mailto:info@reptec.org">info@reptec.org</a></p>
+      <a href="https://www.facebook.com/REALICCOLLEGE/" target="_blank" class="social-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Realic Professional & Technical College. All rights reserved.</p>
+  </div>
 </footer>
+
+<script>
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal, .step, .req-card, .section-header, .cta-inner').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>

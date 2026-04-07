@@ -4,41 +4,211 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programs | Realic Professional & Technical College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="programs.html" class="active">Programs</a></li>
-      <li><a href="admissions.html">Admissions</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Header -->
+<header id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo.jpg" alt="REPTEC Logo" class="logo-img">
+      <div class="logo-text">
+        <span class="logo-name">REPTEC</span>
+        <span class="logo-sub">Realic Professional &amp; Technical College</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html" class="active">Programs</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <h2>Programs Offered</h2>
-  <p>Realic offers accredited certificate and diploma programs that combine theory and practice.</p>
-  
-  <section class="program-list">
-    <h3>Business Studies</h3>
-    <p>Prepare for roles in management, entrepreneurship, and administration. Focus areas include Office Procedures, Marketing, and Financial Principles.</p>
-    
-    <h3>Health & Safety Management</h3>
-    <p>Develop skills in workplace safety, risk assessment, and compliance for industrial and service industries in Botswana.</p>
-    
-    <h3>Office Administration</h3>
-    <p>Learn communication, record-keeping, and computing skills essential for effective business operations.</p>
-  </section>
-</main>
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <p class="hero-tag">Academic Excellence</p>
+    <h1>Our <span class="highlight">Programs</span></h1>
+    <p class="page-hero-desc">Accredited certificate and diploma programs that combine theory and real-world practice.</p>
+  </div>
+  <div class="hero-decoration"></div>
+</section>
 
+<!-- Programs Intro -->
+<section class="programs-intro">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">What We Offer</p>
+      <h2>Programs Designed for <span class="highlight">Your Career</span></h2>
+      <p class="section-desc">Each program is BQA-accredited and built to equip you with practical skills that employers demand. Choose your path.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Program Cards -->
+<section class="programs-section">
+  <div class="container">
+    <div class="program-cards">
+
+      <div class="program-card reveal" style="--delay: 0">
+        <div class="program-card-top">
+          <div class="program-number">01</div>
+          <div class="program-badge">Certificate &amp; Diploma</div>
+        </div>
+        <div class="program-icon-wrap">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        </div>
+        <h3>Business Studies</h3>
+        <p>Prepare for roles in management, entrepreneurship, and administration. Focus areas include Office Procedures, Marketing, and Financial Principles.</p>
+        <ul class="program-topics">
+          <li>Office Procedures</li>
+          <li>Marketing</li>
+          <li>Financial Principles</li>
+          <li>Entrepreneurship</li>
+        </ul>
+        <a href="admissions.html" class="btn btn-outline-dark">Apply Now</a>
+      </div>
+
+      <div class="program-card program-card--featured reveal" style="--delay: 1">
+        <div class="program-card-top">
+          <div class="program-number">02</div>
+          <div class="program-badge">Certificate &amp; Diploma</div>
+        </div>
+        <div class="program-icon-wrap">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3>Health &amp; Safety Management</h3>
+        <p>Develop skills in workplace safety, risk assessment, and compliance for industrial and service industries in Botswana.</p>
+        <ul class="program-topics">
+          <li>Workplace Safety</li>
+          <li>Risk Assessment</li>
+          <li>Compliance Standards</li>
+          <li>Industrial Safety</li>
+        </ul>
+        <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+      </div>
+
+      <div class="program-card reveal" style="--delay: 2">
+        <div class="program-card-top">
+          <div class="program-number">03</div>
+          <div class="program-badge">Certificate &amp; Diploma</div>
+        </div>
+        <div class="program-icon-wrap">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Office Administration</h3>
+        <p>Learn communication, record-keeping, and computing skills essential for effective business operations.</p>
+        <ul class="program-topics">
+          <li>Communication Skills</li>
+          <li>Record Keeping</li>
+          <li>Computing</li>
+          <li>Business Operations</li>
+        </ul>
+        <a href="admissions.html" class="btn btn-outline-dark">Apply Now</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Study Modes -->
+<section class="study-modes">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-tag">Flexible Options</p>
+      <h2>Study on <span class="highlight">Your Terms</span></h2>
+    </div>
+    <div class="modes-grid">
+      <div class="mode-item reveal" style="--delay: 0">
+        <div class="mode-dot"></div>
+        <h4>Full-Time</h4>
+        <p>Immersive weekday classes for focused, accelerated learning.</p>
+      </div>
+      <div class="mode-item reveal" style="--delay: 1">
+        <div class="mode-dot"></div>
+        <h4>Part-Time</h4>
+        <p>Evening sessions designed for working professionals.</p>
+      </div>
+      <div class="mode-item reveal" style="--delay: 2">
+        <div class="mode-dot"></div>
+        <h4>Weekend</h4>
+        <p>Saturday and Sunday classes to fit around your work week.</p>
+      </div>
+      <div class="mode-item reveal" style="--delay: 3">
+        <div class="mode-dot"></div>
+        <h4>Distance Learning</h4>
+        <p>Study from anywhere through our digital platform.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-inner reveal">
+    <h2>Ready to Choose Your Program?</h2>
+    <p>Start your application today and take the first step toward your new career.</p>
+    <a href="admissions.html" class="btn btn-primary btn-lg">Start Application</a>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer>
-  <p>&copy; 2026 Realic Professional & Technical College.</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo.jpg" alt="REPTEC Logo" class="footer-logo">
+      <p>Realic Professional &amp; Technical College</p>
+      <p class="footer-addr">African Mall, Gaborone, Botswana</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Get in Touch</h4>
+      <p>+267 390 3890</p>
+      <p><a href="mailto:info@reptec.org">info@reptec.org</a></p>
+      <a href="https://www.facebook.com/REALICCOLLEGE/" target="_blank" class="social-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Realic Professional & Technical College. All rights reserved.</p>
+  </div>
 </footer>
+
+<script>
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal, .program-card, .mode-item, .section-header, .cta-inner').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>

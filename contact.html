@@ -3,39 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Realic College</title>
+  <title>Contact | Realic Professional & Technical College</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="programs.html">Programs</a></li>
-      <li><a href="admissions.html">Admissions</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
+<!-- Header -->
+<header id="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo.jpg" alt="REPTEC Logo" class="logo-img">
+      <div class="logo-text">
+        <span class="logo-name">REPTEC</span>
+        <span class="logo-sub">Realic Professional &amp; Technical College</span>
+      </div>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('nav').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main>
-  <h2>Contact Us</h2>
-  <p>Visit or reach out to us for inquiries, admissions help, or general information.</p>
-
-  <div class="contact-info">
-    <p><strong>Address:</strong> Plot 940, African Mall, Gaborone, Botswana</p>
-    <p><strong>Phone:</strong> +267 390 3890 / +267 71483827</p>
-    <p><strong>Email:</strong> <a href="mailto:info@reptec.org">info@reptec.org</a></p>
-    <p><strong>Website:</strong> <a href="[reptec.org](https://reptec.org)">reptec.org</a></p>
-    <p><strong>Facebook:</strong> <a href="[facebook.com](https://www.facebook.com/REALICCOLLEGE/)" target="_blank">facebook.com/REALICCOLLEGE</a></p>
+<!-- Page Hero -->
+<section class="page-hero page-hero--compact">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <p class="hero-tag">We'd Love to Hear From You</p>
+    <h1>Get in <span class="highlight">Touch</span></h1>
+    <p class="page-hero-desc">Visit us, call us, or send a message — our team is ready to help.</p>
   </div>
-</main>
+  <div class="hero-decoration"></div>
+</section>
 
+<!-- Contact Content -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Contact Info Cards -->
+      <div class="contact-info-side">
+        <div class="contact-card reveal" style="--delay: 0">
+          <div class="contact-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <h4>Visit Us</h4>
+            <p>Plot 940, African Mall<br>Gaborone, Botswana</p>
+          </div>
+        </div>
+
+        <div class="contact-card reveal" style="--delay: 1">
+          <div class="contact-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <h4>Call Us</h4>
+            <p>+267 390 3890<br>+267 714 83827</p>
+          </div>
+        </div>
+
+        <div class="contact-card reveal" style="--delay: 2">
+          <div class="contact-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <div>
+            <h4>Email Us</h4>
+            <p><a href="mailto:info@reptec.org" class="inline-link">info@reptec.org</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card reveal" style="--delay: 3">
+          <div class="contact-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+          <div>
+            <h4>Follow Us</h4>
+            <p><a href="https://www.facebook.com/REALICCOLLEGE/" target="_blank" class="inline-link">facebook.com/REALICCOLLEGE</a></p>
+          </div>
+        </div>
+
+        <div class="contact-card reveal" style="--delay: 4">
+          <div class="contact-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div>
+            <h4>Website</h4>
+            <p><a href="https://reptec.org" target="_blank" class="inline-link">reptec.org</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-side reveal">
+        <div class="contact-form-card">
+          <h3>Send Us a Message</h3>
+          <p class="form-subtitle">Fill out the form and we'll get back to you within 24 hours.</p>
+          <form class="contact-form" onsubmit="event.preventDefault(); this.querySelector('.form-success').style.display='flex'; this.querySelector('button').textContent='Message Sent!';">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" placeholder="Doe" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic...</option>
+                <option>General Inquiry</option>
+                <option>Admissions</option>
+                <option>Programs</option>
+                <option>Financial Information</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <div class="form-success" style="display:none">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
+              <span>Thank you! We'll be in touch soon.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Map placeholder -->
+<section class="map-section reveal">
+  <div class="map-placeholder">
+    <div class="map-overlay">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+      <p>Plot 940, African Mall, Gaborone, Botswana</p>
+      <a href="https://maps.google.com/?q=African+Mall+Gaborone+Botswana" target="_blank" class="btn btn-outline-dark btn-sm">Open in Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
 <footer>
-  <p>&copy; 2026 Realic Professional & Technical College.</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="logo.jpg" alt="REPTEC Logo" class="footer-logo">
+      <p>Realic Professional &amp; Technical College</p>
+      <p class="footer-addr">African Mall, Gaborone, Botswana</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Get in Touch</h4>
+      <p>+267 390 3890</p>
+      <p><a href="mailto:info@reptec.org">info@reptec.org</a></p>
+      <a href="https://www.facebook.com/REALICCOLLEGE/" target="_blank" class="social-link">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Realic Professional & Technical College. All rights reserved.</p>
+  </div>
 </footer>
+
+<script>
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+});
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal, .contact-card, .section-header, .cta-inner').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
